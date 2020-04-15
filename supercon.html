@@ -113,9 +113,11 @@
                         <div class="mt-3">
                             <h2><span class="font-weight-bold">Superconductors</span></h2>
                             <h4 class="mt-4"> <span class="text-custom font-weight-bold"></span></h4>
-                            <p class="text-muted mt-4">Superconductors are materials that can conduct electricity with 0 resistance. This can lead to some insane properties are harnessed to make particle accelerators, quantum computers and levitation. </p>
-                            <p class="text-muted mt-2">All of the benifits of superconductors could be brought into our everyday lives, which would revolutionize tech as we know it. The issue is superconductors only work at very low tempuratures.</p>
-                            <p class="text-muted mt-2">Room tempurature superconductors might exist, and I'm using VAE's to acceralte the discovery process.</p>
+                            <p class="text-muted mt-4">Superconductors sound like they are straight out of science fiction. They are materials that conduct electricity with 0 resistance. If that doesn't blow your mind, I don't know what will. Back in 1911 when they were discovered they shook the scientific community cus everyone realized how powerful they were. Superconductors can be used in levitation, flying cars, and even quantum computers.</p>
+                            <p class="text-muted mt-2">So if they are so cool, why don't we have them everywhere? The issue is superconducting will only occur when the material is cooled to a specific temperature called the critical temperature. Usually, these temperatures are very low, like near absolute 0 low. They essentially are impractical to use outside of a lab. However, the hunt is on for a superconductor that exists at a higher temperature. We've discovered thousands of superconductors, but are still yet to discover one at room temperature.</p>
+                            <p class="text-muted mt-2">Assuming a room-temperature superconductor even exists, it's likely we will never discover it. The discovery process for them is guessing and checking different materials. Even worse, you need to not only guess what materials work but the temperature and pressure they conduct at. This task is very slow. Luckily, AI is here for the rescue.</p>
+                            <p class="text-muted mt-2">I got a dataset of 16,000 superconductors and their critical temperature. Using a generative model called a Variational Auto Encoder we can generate thousands of possible candidate molecules. My program then cross-references the candidate molecules with a data set of real molecules to make sure they exist in the real world. A second model then takes the ones that do exist and evaluates their critical temperature. The only thing left to do is cross our fingers and hope we find some new superconductors!</p>
+                            <p class="text-muted mt-2">I am currently generating results...</p>
                             <div>
                                 <ul class="mb-0 about-social list-inline mt-4">
                                     <li class="list-inline-item"><a href="https://medium.com/@eliaskountouris9/using-ai-to-create-superconductors-1bb5c0fe742f"><i class="mdi mdi-medium"></i></a></li>
@@ -129,177 +131,23 @@
             </div>
         </section>
         <!-- END ABOUT -->
-    <!--
-         START SERVICES
-        <section class="section bg-light" id="services">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <h2>Our <span class="font-weight-bold">Services</span></h2>
-                            <p class="text-muted mx-auto section-subtitle mt-3">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-growing-chart text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Graphic Design</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-hot-cup text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Unlimited Color</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-upload text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Media Marketing</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-layers text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Unlimited Wifi</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-website-theme text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Responsive Design</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-center services-boxes rounded p-4 mt-4">
-                            <div class="services-boxes-icon">
-                                <i class="mbri-edit text-custom display-4"></i>
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="mb-0">Easy to customize</h5>
-                                <div class="services-title-border"></div>
-                                <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         END SERVICES -->
-    
-    <!--
-         START CTA --
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <h2>I Am Available For Freelancer.</h2>
-                        </div>
-                        <div class="text-center mt-4">
-                            <a href="#" class="btn btn-custom">Hire Me!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-     END CTA -->
-    <!--
-     START CLIENT --
-        <section class="section bg-light" id="client">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <h2>Our <span class="font-weight-bold">Client</span></h2>
-                            <p class="text-muted mx-auto section-subtitle mt-3">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4 pt-4">
-                    <div class="col-lg-12">
-                        <div id="owl-demo" class="owl-carousel">
-                            <div class="text-center testi_boxes mx-auto">
-                                <div class="tam_testi_icon text-custom">
-                                    <i class="mbri-quote-left"></i>
-                                </div>
-                                <div class="mt-2">
-                                    <div>
-                                        <img src="images/testi/testi-1.jpg" alt="" class="mx-auto img-thumbnail img-fluid d-block rounded-circle">
-                                    </div>
-                                    <p class="client_review font-italic mt-4 text-center text-muted">" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here."</p>
-                                    <p class="client_name text-center mb-0 mt-4">- Ebony verty, <span class="font-weight-bold">Envato</span></p>
-                                </div>
-                            </div>
-                            <div class="text-center testi_boxes mx-auto">
-                                <div class="tam_testi_icon text-custom">
-                                    <i class="mbri-quote-left"></i>
-                                </div>
-                                <div class="mt-2">
-                                    <div>
-                                        <img src="images/testi/testi-2.jpg" alt="" class="mx-auto img-thumbnail img-fluid d-block rounded-circle">
-                                    </div>
-                                    <p class="client_review font-italic mt-4 text-center text-muted">" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here."</p>
-                                    <p class="client_name text-center mb-0 mt-4">- Ebony verty, <span class="font-weight-bold">Envato</span></p>
-                                </div>
-                            </div>
-                            <div class="text-center testi_boxes mx-auto">
-                                <div class="tam_testi_icon text-custom">
-                                    <i class="mbri-quote-left"></i>
-                                </div>
-                                <div class="mt-2">
-                                    <div>
-                                        <img src="images/testi/testi-3.jpg" alt="" class="mx-auto img-thumbnail img-fluid d-block rounded-circle">
-                                    </div>
-                                    <p class="client_review font-italic mt-4 text-center text-muted">" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here."</p>
-                                    <p class="client_name text-center mb-0 mt-4">- Ebony verty, <span class="font-weight-bold">Envato</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         END CLIENT -->
 
-        
-        <!-- START BLOG -->
-        <!-- START BLOG -->
         <section class="section bg-light" id="gallery">
+            <div class="container">   
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h2><span class="font-weight-bold"> I Need Your Help!</span></h2>
+                            <p class="text-muted mx-auto section-subtitle mt-3">If you know any researchers working on superconductor discovery, please contact me.</p>
+                            <p class="text-muted mx-auto section-subtitle mt-3">I hope to get the results eventually tested, and I don't have the necessary equipment at home...</p>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </section>
+
+        <!-- START BLOG -->
+        <section class="section" id="gallery">
             <div class="container">   
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
