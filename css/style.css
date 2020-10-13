@@ -658,6 +658,13 @@ button:focus {
     text-align: center;
 }
 
+.LogosTicker{--logoSpeed:90s;--fadeColor:white;--fadeColorTransparent:rgba(255, 255, 255, 0);--logosColor:rgb(14, 30, 37);overflow:hidden;position:relative}
+.LogosTicker__fade{background:linear-gradient(to right,var(--fadeColor) 0,var(--fadeColorTransparent) 20%,var(--fadeColorTransparent) 80%,var(--fadeColor) 100%);height:100%;left:0;position:absolute;top:0;width:100%;z-index:2}
+.LogosTicker__container{display:flex;flex-wrap:nowrap;opacity:.5;width:3800px;color:var(--logosColor)}
+.LogosTicker__container svg{margin:0 1.3em}
+.LogosTicker__one{animation:slide var(--logoSpeed) linear infinite}
+.LogosTicker__two{animation:slide var(--logoSpeed) linear infinite}@keyframes slide{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-100%,0,0)}}
+
 
 /*===========================
         11.RESPONSIVE
@@ -710,3 +717,8 @@ button:focus {
         bottom: -5px;
     }
 }
+
+.avatar.avatar-ex-sm {
+    max-height: 30px;
+  }
+  
