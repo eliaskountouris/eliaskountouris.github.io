@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Galaxy</title>
+    <style>
+      .box {
+        width: 45%;
+        float: left;
+        padding-top: 5px;
+        padding-left: 5px;
+      }
+      #bgd {
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas
+      id="bgd"
+      width="100;"
+      height="100"
+      style="border: 1px solid rgb(0, 0, 0)"
+    ></canvas>
+
+    <div class="box">
+      <h1>Galaxy Simulation</h1>
+      <h1>Work In Progress</h1>
+      <p>
+        Inspired by a simulation done by Jeremiah Ostriker and Jim Peebles on the
+        formation of galaxies and the influence dark matter has on the stability
+        of spiral galaxies. Their work and results can be found <a href="https://articles.adsabs.harvard.edu//full/1973ApJ...186..467O/0000467.000.html">here</a>.
+        <br>
+        <br>
+        Currently in the process of improving simulation efficiency, simulating dark matter, and improving UI.
+      </p>
+      <h1>Tutorial</h1>
+      <p>Enter number of stars and press populate to begin the simulation.</p>
+      <p>Mass of simulated stars is many order of magnitudes too small, as such gravitational constant has been drastically increased to compensate. Future iterations will have accurate value for gravitational constant and star mass.</p>
+    </div>
+    <div class="box">
+      <div>
+        <button id="populate">Populate</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div>
+        <h1 id="ballNum">Number of Stars</h1>
+        <p><input id="num" type="text" /></p>
+      </div>
+      <div>
+        <h1>Gravitational Constant</h1>
+        <p><input type="text" id="gconst" value="0.1" /></p>
+      </div>
+    </div>
+    <script src="circle.js"></script>
+    <script src="form.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
