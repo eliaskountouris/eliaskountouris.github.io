@@ -1,241 +1,217 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/main/boxes.css" />
-    <link rel="stylesheet" type="text/css" href="css/main/leftBoxes.css" />
-    <link rel="stylesheet" type="text/css" href="css/main/rightBoxes.css" />
-    <link rel="stylesheet" type="text/css" href="css/main/leftSide.css" />
-    <link rel="stylesheet" type="text/css" href="css/main/rightSide.css" />
-    <link rel="stylesheet" type="text/css" href="css/main/style.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Elias Kountouris</title>
-    <style></style>
-  </head>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/main/boxes.css" />
+  <link rel="stylesheet" type="text/css" href="css/main/leftBoxes.css" />
+  <link rel="stylesheet" type="text/css" href="css/main/rightBoxes.css" />
+  <link rel="stylesheet" type="text/css" href="css/main/leftSide.css" />
+  <link rel="stylesheet" type="text/css" href="css/main/rightSide.css" />
+  <link rel="stylesheet" type="text/css" href="css/main/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&display=swap" rel="stylesheet" />
 
-  <body>
-    <div id="page">
-      <div id="left">
-        <div id="photoBox">
-          <img src="images\general\elias.jpg" id="photoOfMe" />
-          <h1 id="name">Elias Kountouris</h1>
-        </div>
-        <div class="contentLeft">
-          <p>
-            I enjoy learning about computer hardware and electronic circuits.
-            Currently working on creating a RISC-V CPU in Verilog.
-          </p>
-          <p>
-            I spend my time away from the computer reading Dostoevsky and
-            playing chess. <br> <br>
-            (Below is my Lichess account, send me a challenge if
-            you think you can beat me 😉)
-          </p>
-          <p>Comp Eng @ UWaterloo</p>
-        </div>
-        <div class="contentLeft">
-          <span class="linkGrid">
-            <a
-              class="linkItem"
-              target="_blank"
-              href="https://www.github.com/eliaskountouris"
-              >Github</a
-            >
-            <a
-              class="linkItem"
-              target="_blank"
-              href="https://www.linkedin.com/in/elias-kountouris/"
-              >LinkedIn</a
-            >
-            <a
-              class="linkItem"
-              target="_blank"
-              href="mailto:eliasjkountouris@gmail.com"
-              >Email</a
-            >
-            <a
-              class="linkItem"
-              target="_blank"
-              href="https://lichess.org/@/kountouris08"
-              >Lichess</a
-            >
-            <a
-              class="linkItem"
-              target="_blank"
-              href="./pages/Elias_Kountouris_Resume.pdf"
-              >Resume</a
-            ></span
-          >
-        </div>
+  <title>Elias Kountouris</title>
+  <style></style>
+</head>
+
+<body>
+  <div id="page">
+    <div id="left">
+      <div id="photoBox">
+        <img src="images\general\elias.jpg" id="photoOfMe" />
+        <h1 id="name">Elias Kountouris</h1>
       </div>
-      <div id="right">
-        <div class="contentRight">
-          <span>
-            <h1>Featured Projects</h1>
-            <div class="pictureGrid">
-              <a
-              href="https://github.com/eliaskountouris/SmartFloorRegister"
-              target="_blank"
-              class="gridItem"
-            >
+      <div class="contentLeft">
+        <p>
+          I enjoy learning about new technologies and challenging myself by
+          building interesting projects. Currently exploring computer hardware
+          and CPU architecture.
+        </p>
+        <p>
+          I spend my time away from the computer reading Dostoevsky and
+          playing chess (Below is my Lichess account, send me a challenge if
+          you think you can beat me 😉)
+        </p>
+        <p>Comp Eng @ UWaterloo</p>
+      </div>
+      <div class="contentLeft">
+        <span class="linkGrid">
+          <a class="linkItem" target="_blank" href="https://www.github.com/eliaskountouris">Github</a>
+          <a class="linkItem" target="_blank" href="https://www.linkedin.com/in/elias-kountouris/">LinkedIn</a>
+          <a class="linkItem" target="_blank" href="mailto:eliasjkountouris@gmail.com">Email</a>
+          <a class="linkItem" target="_blank" href="https://lichess.org/@/kountouris08">Lichess</a>
+          <a class="linkItem" target="_blank" href="./pages/Elias_Kountouris_Resume.pdf">Resume</a></span>
+      </div>
+    </div>
+    <div id="right">
+      <div class="contentRight">
+        <span>
+          <h1>Featured Projects</h1>
+          <div class="pictureGrid">
+            <!-- ------------------------- -->
+            <a href="https://github.com/eliaskountouris/simpleCPU" target="_blank" class="gridItem">
+              <span>
+                <h2>Simple CPU</h2>
+                <ul>
+                  <li>
+                    Implemented CPU design in verilog using a reduced instruction set and architecture based on the von Neumann architecture
+                  </li>
+                  <li>Created modules for ALU, registers, memory, and control architecture</li>
+                  <li>
+                    Implemented testing module to interact with registers and memory using buttons and LEDs
+                  </li>
+                  <li>
+                      Design simulated in Vivado and tested on the Pynq-Z2 FPGA
+                  </li>
+                </ul>
+              </span>
+              <!-- 
+              <img src="images\projects\keyboard.jpg" /> -->
+            </a>
+            <!-- ------------------------- -->
+            <a href="https://github.com/eliaskountouris/SmartFloorRegister" target="_blank" class="gridItem">
               <span>
                 <h2>Smart Floor Vent</h2>
                 <ul>
                   <li>
-                    Worked with ME Engineering Students to design a floor vent register that would have be able to automatically open and close the vent based on the tempurature.
+                    Worked with team of mechanical engineers to design a smart floor vent that would open / close based on the ambient room tempurature
                   </li>
-                  <li>Designed control controlelr board to house the microcontroller (ATMEGA64A), signal processing for thermopile / thermocouple sensors, motor controllers and I/O.</li>
+                  <li>Designed controller board using the ATMega64A to control motors ands analog sensors</li>
                   <li>
-                    <li>Create PCB layout to fit within space allocated for the board.</li>
+                    Power system created w/ boost converter and capacitors to power +3.3V digital and anlog circuits, and +5V motors from either USB or batteries.
                   </li>
                 </ul>
               </span>
-              <img src="images\projects\keypad.jpg" />
+              <img src="images\projects\floorVent.jpg" />
             </a>
-            <a>
-              <a
-              href="https://github.com/eliaskountouris/MysteriumRerouted"
-              target="_blank"
-              class="gridItem"
-            >
+            <!-- ------------------------- -->
+            <a href="https://github.com/eliaskountouris/MysteriumRerouted" target="_blank" class="gridItem">
               <span>
                 <h2>Custom Keyboard</h2>
                 <ul>
                   <li>
-                    Design based off of Mysterium Keyboard.
+                    Custom Keypad schematic and PCB layout created on KiCAD
                   </li>
-                  <li>Iterated off of previous keypad project. This allowed me to identify potential issues before the full build.</li>
+                  <li>ATMega32A w/ USB-C for I/O</li>
                   <li>
-                    <li>Wrote custom FW using QMK Keyboard Library to control diode matrix.</li>
+                    Diode matrix to determine keypress
                   </li>
-                  <li>
-                    Assembled and soldered board with 200+ throughhole components. 
-                  </li>
+                  <li>Soldered 200+ throughole components</li>
                 </ul>
               </span>
-              <img src="images\projects\keypad.jpg" />
+              <img src="images\projects\keyboard.jpg" />
             </a>
-          </a>
-            <h1>Other Projects</h1>
-            <div class="pictureGrid">
-              <a
-              href="https://github.com/eliaskountouris/Keypad"
-              target="_blank"
-              class="gridItem"
-            >
+            <!-- ------------------------- -->
+          </div>
+          <!-- ------------------------- -->
+          <h1>Αrchived Projects</h1>
+          <div class="pictureGrid">
+            <a href="https://github.com/eliaskountouris/Keypad" target="_blank" class="gridItem">
               <span>
                 <h2>Custom Keypad</h2>
                 <ul>
                   <li>
-                    Custom Keypad schematic and PCB layout created on KiCAD to identify issues before full-size keyboard build.
+                    Custom Keypad schematic and PCB layout created on KiCAD
                   </li>
-                  <li>Wrote custom FW using QMK Keyboard Library.</li>
+                  <li>Firmware built with QMK library</li>
                   <li>
                     Assembled and soldered board with SMD 0805 / 2012
-                    components.
+                    components
                   </li>
                 </ul>
               </span>
               <img src="images\projects\keypad.jpg" />
             </a>
-              <a
-              href="https://chrome.google.com/webstore/detail/takeaways/ehcmjoghediminbmabjnhogpaacceilm?hl=en"
-              target="_blank"
-              class="gridItem"
-            >
+            <!-- ------------------------- -->
+            <!-- ------------------------- -->
+            <a href="https://chrome.google.com/webstore/detail/takeaways/ehcmjoghediminbmabjnhogpaacceilm?hl=en"
+              target="_blank" class="gridItem">
               <span>
                 <h2>TakeAways</h2>
                 <ul>
                   <li>Chrome extension that summarizes web articles</li>
-                  <li>Scrapes text off page and processes it.</li>
+                  <li>Scrapes text off page and processes it</li>
                   <li>
                     Searches for the most common topics and then ranks
-                    sentences based on how often those topics appear.
+                    sentences based on how often those topics appear
                   </li>
-                  <li>Presents the highest rank sentences to the user.</li>
+                  <li>Presents the highest rank sentences to the user</li>
                 </ul>
               </span>
               <img src="images\projects\TakeAwaysLogo.jpg" />
             </a>
-              <a
-                href="https://github.com/eliaskountouris/ChessAI"
-                target="_blank"
-                class="gridItem"
-              >
-                <span>
-                  <h2>Chess Engine</h2>
-                  <ul>
-                    <li>Alpha-Beta move search algorithm to search moves.</li>
-                    <li>Custom heuristics algorithm to optimize move search.</li>
-                    <li>
-                      Most recent version can beat Stockfish 3. New itteration is a work in progress.
-                    </li>
-                    <li>
-                      TODO: Improve move search via hashing. Develop new supervised model using database of Lichess games.
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\chess.jpg" />
-              </a>
-            </div>
-            <h1>On This Website</h1>
-            <div class="pictureGrid">
-              <a href="./pages/galaxy/galaxy.html" class="gridItem">
-                <span style="width: 100%">
-                  <h2>Galaxy Simulation</h2>
-                  <ul>
-                    <li>
-                      Based on paper by Jeremiah Ostriker and Jim Peebles which
-                      simulated spiral galaxy formation and demonstrated how
-                      dark matter was needed for stability.
-                    </li>
-                    <li>
-                      TODO: Implement dark matter shells simulations, as described by their paper.
-                    </li>
-                  </ul>
-                </span>
-              </a>
-              <a href="./pages/collision/collision.html" class="gridItem">
-                <span style="width: 100%">
-                  <h2>Elastic Collision Simulator</h2>
-                  <ul>
-                    <li>Basic Elastic Collision simulator</li>
-                  </ul>
-                </span>
-              </a>
-            </div>
-            <div>
-              <h1>Skills</h1>
-              <h2>Software Packages</h2>
-              <p>Vivado, KiCAD, OrCAD, Allegro, LTSpice, Solidworks, AutoCAD</p>
-              <h2>Tools</h2>
-              <p>Soldering, Reflow Oven, Oscilloscope, JLink</p>
-              <h2>Languages</h2>
-              <p>Verilog, C, C++, Python, Javascript, Bash</p>
-              <h2>Python Libraries I'm Familiar With</h2>
-              <p>Numpy, Pandas, Pytorch, Tensorflow</p>
-              <h2>Other Stuff I Know How to Use</h2>
-              <p>Git, Jira, Arena</p>
-            </div>
-            <div>
-              <h1>You Still Scrolling?</h1>
-              <p>
-                If you're spending this much time here, you might as well send
-                me a message
-              </p>
-              <p></p>
-            </div>
-          </span>
-        </div>
+            <!-- ------------------------- -->
+            <a href="https://github.com/eliaskountouris/ChessAI" target="_blank" class="gridItem">
+              <span>
+                <h2>Chess Engine</h2>
+                <ul>
+                  <li>Alpha-Beta move search algorithm to search moves</li>
+                  <li>Custom heuristics algorithm to optimize move search</li>
+                  <li>
+                    Currently working on reinforcement learning algorithm with
+                    Tensorflow for new evaluation function
+                  </li>
+                </ul>
+              </span>
+              <img src="images\projects\chess.jpg" />
+            </a>
+            <!-- ------------------------- -->
+          </div>
+          <h1>On This Website</h1>
+          <div class="pictureGrid">
+            <a href="./pages/galaxy/galaxy.html" class="gridItem">
+              <span style="width: 100%">
+                <h2>Galaxy Simulation</h2>
+                <ul>
+                  <li>
+                    Based on paper by Jeremiah Ostriker and Jim Peebles which
+                    simulated spiral galaxy formation and demonstrated how
+                    dark matter was needed for stability.
+                  </li>
+                  <li>
+                    Currently working on implementing dark matter shells as
+                    described by their paper
+                  </li>
+                </ul>
+              </span>
+            </a>
+            <a href="./pages/collision/collision.html" class="gridItem">
+              <span style="width: 100%">
+                <h2>Elastic Collision Simulator</h2>
+                <ul>
+                  <li>Basic Elastic Collision simulator</li>
+                </ul>
+              </span>
+            </a>
+          </div>
+          <div>
+            <h1>Skills</h1>
+            <h2>Languages</h2>
+            <p>Verilog, C++, C, Python, MATLAB, Javascript, Bash</p>
+            <h2>Python Libraries I'm Familiar With</h2>
+            <p>Numpy, Pandas, Pytorch, Tensorflow, Django</p>
+            <h2>Software</h2>
+            <p>Vivado, Cadence, KiCad, LTspice, Solidworks, Linux, Git, Confluence</p>
+            <h2>Tools</h2>
+            <p>Soldering, Reflow Oven, Oscilloscope</p>
+            <h2>Currently Learning</h2>
+            <p>RISC-V, VHDL</p>
+          </div>
+          <div>
+            <h1>You Still Scrolling?</h1>
+            <p>
+              If you're spending this much time here, you might as well send
+              me a message
+            </p>
+            <p></p>
+          </div>
+        </span>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
