@@ -11,8 +11,7 @@
     margin-left: 1px;
     cursor: pointer;
     font-size: 150%;
-    background-color: #20bdff;
-    background-image: linear-gradient(to right, #5433ff, #20bdff);
+    background-color: #f85e84;
     background-size: 100%;
     width: fit-content;
     -webkit-background-clip: text;
@@ -35,8 +34,7 @@
       margin-left: 1px;
       cursor: pointer;
       font-size: 100%;
-      background-color: #20bdff;
-      background-image: linear-gradient(to right, #5433ff, #20bdff);
+      background-color: #f85e84;
       background-size: 100%;
       width: fit-content;
       -webkit-background-clip: text;
@@ -49,7 +47,7 @@
 #photoOfMe {
   border-radius: 20%;
   border: 4px solid transparent;
-  background: linear-gradient(135deg, #5433ff, #20bdff) border-box;
+  background: #f85e84 border-box;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
