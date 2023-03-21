@@ -12,7 +12,7 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 1.5vh;
+  font-size: 2vw;
   color: var(--accent-color);
   margin-bottom: 1vh;
 }
@@ -22,7 +22,7 @@ h2 {
   margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1.25vw;
+  font-size: 1.7vw;
   color: var(--text-color);
 }
 
@@ -30,7 +30,7 @@ h3 {
   margin-top: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: var(--text-color);
 }
 
@@ -39,7 +39,7 @@ p,
 a {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 0.8vw;
+  font-size: 1vw;
   color: var(--text-color);
 }
 
@@ -64,6 +64,6 @@ div.box:hover > span > h2 {
 }
 
 .contentLeft > ul > li > a:hover {
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   cursor: pointer;
 }
