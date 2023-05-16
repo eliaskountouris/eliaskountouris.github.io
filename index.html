@@ -25,7 +25,7 @@
       <div class="contentLeft">
         <h3>Summary</h3>
         <p>
-        Interested in computer architecture, FPGAs, avionics, and machine learning. Currently working on an custom oscilloscope and a CPU w/ verilog and magic.
+        Interested in computer architecture, FPGAs, avionics, and machine learning. Currently working on a custom oscilloscope and a CPU w/ verilog and magic.
         </p>
         <p>
         During my time away from the computer you can find me rock climbing, playing chess, or reading. I am bad at all 3 of them.
@@ -52,19 +52,117 @@
             <a class="boxList" href="https://github.com/eliaskountouris/simpleCPU" target="_blank">
               <div class="box" >
                 <span>
+                  <h2>Ground Side Power Distribution</h2>
+                  <ul>
+                    <li>
+                    250W power system for ground side support equipment of single-stage hybrid rocket
+                    </li>
+                    <li>
+                    3 seperate boards:
+                    <ul>
+                      <li>
+                      Input Board:
+                      <ul>
+                        <li>
+                        Takes ~12V input from either car battery or computer PSU
+                        </li>
+                        <li>
+                        Contains current limiter, polarity protection, fuses and other saftey measures
+                        </li>
+                        <li>
+                        Capacitors to protect against large pulses
+                        </li>
+                      </ul>
+                      </li>
+                      <li>
+                      Converter Board:
+                      <ul>
+                        <li>
+                          Handles 12V -> 24V and 12V -> 5V conversiion
+                        </li>
+                        <li>
+                          Current, voltage and thermal monitoring on board
+                        </li>
+                      </ul>
+                      </li>
+                      <li>
+                      Connector Board:
+                      <ul>
+                        <li>
+                          Distributes power to various off-board M12 connectors
+                        </li>
+                        <li>
+                          Powers cooling fans
+                        </li>
+                      </ul>
+                      </li>
+                    </ul>
+                    </li>
+                  </ul>
+                </span>
+                <img src="images\projects\GSP.png" />
+                <img src="images\projects\GSP2.png" />
+              </div>
+            </a>
+            <!-- ------------------------- -->
+            <a class="boxList" href="https://github.com/waterloo-rocketry/canhw/tree/master/sensor_mini" target="_blank">
+              <div class="box" >
+                <span>
+                  <h2>Mini Sensor Board</h2>
+                  <ul>
+                    <li>
+                      Small sensor board for telemetry data
+                    </li>
+                    <li>
+                      3.8 cm x 3 cm
+                    </li>
+                    <li>
+                      Contains:
+                      <ul>
+                        <li>
+                          6 Axis IMU
+                        </li>
+                        <li>
+                          Magnetometer
+                        </li>
+                        <li>
+                          Thermistors
+                        </li>
+                        <li>
+                          Barometer
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Protocals Used:
+                      <ul>
+                        <li>
+                          CAN Bus
+                        </li>
+                        <li>
+                          I2C
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </span>
+                <img src="images\projects\miniSensor.png" />
+              </div>
+            </a>
+            <!-- ------------------------- -->
+            <a class="boxList" href="https://github.com/eliaskountouris/simpleCPU" target="_blank">
+              <div class="box" >
+                <span>
                   <h2>Simple CPU</h2>
                   <ul>
                     <li>
-                    Implemented CPU design in verilog using a reduced instruction set and architecture based on the von Neumann architecture
+                    Designed a small ISA inspired by RISC-V to create an 8-bit Harvard CPU
                     </li>
                     <li>
-                    Created modules for ALU, registers, memory, and control architecture
+                    Created custom ALU, memory, register file, and control path modules to implement the ISA• Created custom ALU, memory, register file, and control path modules to implement the ISA
                     </li>
                     <li>
-                    Implemented testing module to interact with registers and memory using buttons and LEDs
-                    </li>
-                    <li>
-                      Design simulated in Vivado and tested on the Pynq-Z2 FPGA
+                      Used verilog testbenches to verify ALU and control path functionality
                     </li>
                   </ul>
                 </span>
@@ -164,7 +262,7 @@
             <!-- ------------------------- -->
             <h1>Skills Summary</h1>
             <h2>Languages</h2>
-            <p>Verilog, RISC-V, C++, C, Python, Bash, Javascript </p>
+            <p>Verilog, SystemVerilog, RISC-V, C++, C, Python, Bash, Javascript </p>
             <h2>CAD</h2>
             <p>Altium, Cadence, Vivado, KiCAD, Solidworks</p>
             <!-- ------------------------- -->
