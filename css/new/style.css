@@ -7,6 +7,10 @@
 
 body {
   background-color: var(--background-color);
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 h1 {
@@ -19,7 +23,7 @@ h1 {
 
 h2 {
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: max(16px, 1.4vw);
@@ -27,9 +31,19 @@ h2 {
 }
 
 h3 {
-  margin-top: 0px;
+  margin-top: -1vh;
+  margin-bottom: -1vh;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: max(14px, 1.2vw);
+  color: var(--text-color);
+}
+
+h4 {
+  margin-top: 1vh;
+  margin-bottom: -1vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   font-size: max(14px, 1.2vw);
   color: var(--text-color);
 }
@@ -41,6 +55,10 @@ a {
   font-weight: 300;
   font-size: max(12px, 1vw);
   color: var(--text-color);
+}
+
+ul, ol {
+  padding-left: 2vw;
 }
 
 a:link,

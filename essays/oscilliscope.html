@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/new/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&display=swap" rel="stylesheet" />
+
+		<title>Oscilliscope</title>
+		<style></style>
+	</head>
+
+	<body>
+		<h1>DIY Oscilliscope Project </h1>
+		<h2>Build Log</h2>
+		<br>
+		<h3>Goals</h3>
+		<ul>
+			<li>Create a functioning oscilliscope capable of measuring most signals in personal projects </li>
+			<li>Keep it affordable (less than $150 CAD) </li>
+			<li>Make it transportable (ideally one box, no setup required)  </li>
+			<li>Learn about high frequency / mixed signal design  </li>
+			<li>Attempt to implement   </li>
+		</ul>
+		<h3>Pre-July 2023</h3>
+		<ul>
+			<li>Researched basic theory of operation for an oscilliscope </li>
+			<li>Selected ADC10065 as a potential ADC</li>
+		</ul>
+		<h3>July 3rd, 2023</h3>
+		<h4>High Level Project Changes </h4>
+		<ul>
+			<li>Decided to sacrifice transportability for this first prototype</li>
+			<li>Will design analog front end arduino sheild board to handle signal input</li>
+			<li>Will use PYNQ-Z2 PL to handle clock signals, buffering, and data output </li>
+			<li>Will use PYNQ-Z2 PS to create python UI </li>
+		</ul>
+		<h4>Project Timeline </h4>
+		<ul>
+			<li>The latest I can assemble the board by is ~Aug 15th, thus everything needs to have
+				arrived by then. I'm assuming ~2 weeks for JLC order, so board should be ordered by July 31st.
+			</li>
+			<li>The bulk of verilog code can be written during that 2 week gap, but I will verify some 
+				design assumptions this week in the lab. Mainly regarding the transmition of high frequency
+				signals through the GPIO pins on the ardunio sheild.</li>
+		</ul>
+		<h3>July 6th, 2023</h3>
+		<h4>Evaluation of Signal Integrity </h4>
+		<ul>
+			<li>Preliminary tests to determine highest frequency I could drive discrete signals through arduino sheild</li>
+			<li>Struggled to get FPGA to output clock signals larger than 64 MHz</li>
+			<li>Will need to return with proper verilog code setup to evaluate 100 MHz clocks, or clock splicing </li>
+			<li>Discovered impact of 451Ω series resistance with prob to improve power transfer of signals, below are photos of the scope screen before and after adding the resistor:</li>
+		</ul>
+		<img src="..\images\essays\oscilliscope\arduinoShieldNoRes.jpg" id="photoOfMe" />
+		<img src="..\images\essays\oscilliscope\arduinoShieldRes.jpg" id="photoOfMe" />
+	</body>
+</html>
