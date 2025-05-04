@@ -1,0 +1,147 @@
+:root {
+  --text-color: white;
+  --background-color: black;
+  --accent-color: cyan;
+  --link-hover-color: cyan;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 5vh auto;
+  padding: 0 5vw;
+  max-width: 1000px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(18px, 2vw, 32px);
+  color: var(--accent-color);
+  margin-bottom: 1vh;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 1vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.5vw, 28px);
+  color: var(--text-color);
+}
+
+h3 {
+  margin-top: -1vh;
+  margin-bottom: -1vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.2vw, 24px);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.list-box h3 {
+  text-align: left;
+}
+
+p {
+  text-align: center;
+}
+
+li,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: clamp(14px, 1vw, 18px);
+  color: var(--text-color);
+}
+
+ul, ol {
+  padding-left: 2vw;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+div.box:hover > img {
+  border: 3px solid var(--accent-color);
+}
+
+div.box:hover > span > h2 {
+  color: var(--accent-color);
+}
+
+ul > li > a {
+  transition: font-size 0.3s;
+}
+
+ul > li > a:hover {
+  font-size: max(16px, 1.4vw);
+  cursor: pointer;
+}
+
+#photoBox {
+  position: relative;
+  margin-top: 7vh;
+  width: 40vw;
+  text-align: center;
+  padding: 1vw 0vw;
+  left: 50%;
+  margin-left: -20vw;
+}
+
+#photoOfMe {
+  width: 15vw;
+  display: inline-block;
+  border-radius: 20%;
+  border: 0.2vw solid transparent;
+  background: var(--accent-color) border-box;
+}
+
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 8vw;  
+}
+
+.list-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.list-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 4vw;
+    margin: 2vh auto;
+  }
+
+  #photoBox {
+    width: 90vw;
+    margin-left: -45vw;
+    left: 50%;
+  }
+
+  #photoOfMe {
+    width: 40vw;
+  }
+
+  .list-box {
+    max-width: 90vw;
+  }
+}

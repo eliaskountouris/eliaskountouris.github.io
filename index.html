@@ -1,11 +1,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/new/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/new/structure.css" />
-  <link rel="stylesheet" type="text/css" href="css/new/boxes.css" />
-  <link rel="stylesheet" type="text/css" href="css/new/boxesHover.css" />
-  <link rel="stylesheet" type="text/css" href="css/new/leftSide.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&display=swap" rel="stylesheet" />
@@ -15,276 +11,55 @@
 </head>
 
 <body>
-    <div id="left">
-      <div id="photoBox">
-        <img src="images\general\elias.jpg" id="photoOfMe" />
-        <h1 id="name">Elias Kountouris</h1>
-      </div>
-      <div class="contentLeft">
-        <h3>Summary</h3>
-        <p>
-        Interested in computer architecture, FPGAs, avionics, and machine learning. Currently working on a custom oscilloscope and a CPU w/ verilog and magic.
-        </p>
-        <p>
-        During my time away from the computer you can find me rock climbing, playing chess, or reading. I am bad at all 3 of them.
-        </p>
-      </div>
-      <div class="contentLeft">
+        <div id="photoBox">
+          <img src="images\general\elias.jpg" id="photoOfMe" />
+          <h1 id="name">Elias Kountouris</h1>
+        </div>
         <h3>Education</h3>
         <p>EE @ UWaterloo '26</p>
-      </div>
-      <div class="contentLeft">
-        <h3>Links</h3>
-        <ul>
-        <li><a class="linkItem" target="_blank" href="https://www.github.com/eliaskountouris">Github</a></li>
-        <li><a class="linkItem" target="_blank" href="https://www.github.com/eliaskountouris/nvim-config">Dotfiles</a></li>
-        <li><a class="linkItem" target="_blank" href="https://www.linkedin.com/in/elias-kountouris/">LinkedIn</a></li>
-        <li><a class="linkItem" target="_blank" href="mailto:eliasjkountouris@gmail.com">Email</a></li>
-        <li><a class="linkItem" target="_blank" href="./pages/Elias_Kountouris_Resume.pdf">Resume</a></li>
-        <li><a class="linkItem" target="_blank" href="./essays/essayindex.html">Writings</a></li>
-        <li><a class="linkItem" target="_blank" href="./papers/paperindex.html">Readings</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="right">
-          <h1>Hardware Projects</h1>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/eliaskountouris/CPUproject" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>PLA based ALU</h2>
-                  <ul>
-                    <li>
-                      Designed 8-bit ALU which uses PLA to implement infrequently used instruction
-                    </li>
-                    <li>
-                    Implement Quine–McCluskey algorithm in python to find config bits for PLA
-                    </li>
-                    <li>
-                      Working on implementing it into a full pipelined CPU
-                    </li>
-                  </ul>
-                </span>
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/waterloo-rocketry/infrastructure/tree/master/ground-side-power" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Ground Side Power Distribution</h2>
-                  <ul>
-                    <li>
-                    250W power system for ground side support equipment of single-stage hybrid rocket
-                    </li>
-                    <li>
-                    3 seperate boards:
-                    <ul>
-                      <li>
-                      Input Board:
-                      <ul>
-                        <li>
-                        Takes ~12V input from either car battery or computer PSU
-                        </li>
-                        <li>
-                        Contains current limiter, polarity protection, fuses and other saftey measures
-                        </li>
-                        <li>
-                        Capacitors to protect against large pulses
-                        </li>
-                      </ul>
-                      </li>
-                      <li>
-                      Converter Board:
-                      <ul>
-                        <li>
-                          Handles 12V -> 24V and 12V -> 5V conversiion
-                        </li>
-                        <li>
-                          Current, voltage and thermal monitoring on board
-                        </li>
-                      </ul>
-                      </li>
-                      <li>
-                      Connector Board:
-                      <ul>
-                        <li>
-                          Distributes power to various off-board M12 connectors
-                        </li>
-                        <li>
-                          Powers cooling fans
-                        </li>
-                      </ul>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\GSP.png" />
-                <img src="images\projects\GSP2.png" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/waterloo-rocketry/canhw/tree/master/sensor_mini" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Mini Sensor Board</h2>
-                  <ul>
-                    <li>
-                      Small sensor board for telemetry data
-                    </li>
-                    <li>
-                      3.8 cm x 3 cm
-                    </li>
-                    <li>
-                      Contains:
-                      <ul>
-                        <li>
-                          6 Axis IMU
-                        </li>
-                        <li>
-                          Magnetometer
-                        </li>
-                        <li>
-                          Thermistors
-                        </li>
-                        <li>
-                          Barometer
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Protocals Used:
-                      <ul>
-                        <li>
-                          CAN Bus
-                        </li>
-                        <li>
-                          I2C
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\miniSensor.png" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/eliaskountouris/simpleCPU" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Simple CPU</h2>
-                  <ul>
-                    <li>
-                    Implemented simple Harvard CPU using a custom reduced ISA
-                    </li>
-                    <li>
-                    Created custom ALU, memory, register file, and control path modules to implement the ISA• Created custom ALU, memory, register file, and control path modules to implement the ISA
-                    </li>
-                    <li>
-                      Used verilog testbenches to verify ALU and control path functionality
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\simpleCPU.jpg" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/eliaskountouris/SmartFloorRegister" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Smart Floor Vent</h2>
-                  <ul>
-                    <li>
-                    Worked with team of mechanical engineers to design a smart floor vent that would open / close based on the ambient room tempurature
-                    </li>
-                    <li>Designed controller board using the ATMega64A to control motors ands analog sensors</li>
-                    <li>
-                    Power system created w/ boost converter and capacitors to power +3.3V digital and anlog circuits, and +5V motors from either USB or batteries.
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\floorVent.jpg" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://github.com/eliaskountouris/MysteriumRerouted" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Keyboard</h2>
-                  <ul>
-                    <li>
-                    Custom Keypad schematic and PCB layout created on KiCAD
-                    </li>
-                    <li>
-                      ATMega32A w/ USB-C for I/O
-                    </li>
-                    <li>
-                    Diode matrix to determine keypress
-                    </li>
-                    <li>
-                      Soldered 200+ throughole components
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\keyboard.jpg" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-          <h1>Software Projects</h1>
-            <!-- ------------------------- -->
-            <a class="boxList" href="https://chrome.google.com/webstore/detail/takeaways/ehcmjoghediminbmabjnhogpaacceilm?hl=en" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Takeaways</h2>
-                  <ul>
-                    <li>
-                      Chrome extension that summarizes web articles
-                    </li>
-                    <li>
-                    Scrapes text off page and processes it
-                    </li>
-                    <li>
-                    Searches for the most common topics and then ranks
-                    sentences based on how often those topics appear
-                    </li>
-                    <li>
-                    Presents the highest rank sentences to the user
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\TakeAwaysLogo.jpg" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-          <h1>Old Projects</h1>
-            <a class="boxList" href="https://github.com/eliaskountouris/Keypad" target="_blank">
-              <div class="box" >
-                <span>
-                  <h2>Keypad</h2>
-                  <ul>
-                    <li>
-                    Custom Keypad schematic and PCB layout created on KiCAD
-                  dd
-                    </li>
-                    <li>
-                      Firmware built with QMK library
-                    </li>
-                    <li>
-                    Assembled and soldered board with SMD 0805 / 2012
-                    components
-                    </li>
-                  </ul>
-                </span>
-                <img src="images\projects\keypad.jpg" />
-              </div>
-            </a>
-            <!-- ------------------------- -->
-            <h1>You Still Scrolling?</h1>
-            <p> If you're spending this much time here, send me a message on LinkdIn </p>
-            <br>
-            <br>
-            <br>
-    </div>
+
+         <div class="list-container">
+            <div class="list-box">
+              <h3>Technical Interests</h3>
+              <ul>
+                <li>Circuits </li>
+                <li>Physical Design </li>
+                <li>Computer Architecture </li>
+                <li>FPGAs </li>
+              </ul>
+            </div>
+
+            <div class="list-box">
+              <h3>Hobbies</h3>
+              <ul>
+                <li>Reading </li>
+                <li>Rock Climbing </li>
+                <li>Chess </li>
+                <li>Minecraft </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-container">
+            <div class="list-box">
+              <h3>Links to Projects</h3>
+              <ul>
+                <li><a class="linkItem" href="./build/index.html">Project Docs</a></li>
+                <li><a class="linkItem" href="./build/index.html">Paper Reviews</a></li>
+                <li><a class="linkItem" target="_blank" href="https://www.github.com/eliaskountouris">Github</a></li>
+                <li><a class="linkItem" target="_blank" href="https://www.github.com/eliaskountouris/nvim-config">Dotfiles</a></li>
+              </ul>
+            </div>
+
+            <div class="list-box">
+              <h3>Other Links</h3>
+              <ul>
+                <li><a class="linkItem" target="_blank" href="https://www.linkedin.com/in/elias-kountouris/">LinkedIn</a></li>
+                <li><a class="linkItem" target="_blank" href="./pages/Elias_Kountouris_Resume.pdf">Resume</a></li>
+                <li><a class="linkItem" target="_blank" href="mailto:eliasjkountouris@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
 </body>
 
 </html>
