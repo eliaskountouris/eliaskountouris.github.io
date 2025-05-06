@@ -41,6 +41,8 @@ From known thermodynamics (using Wein's Displacement Law), the temperature for a
 
 :math:`T= f(\frac{U}{f})`
 
+Using the relation between entropy, temperature and thermal energy, you can show that entropy must then also be a function of :math:`\frac{U}{f}`.
+
 Since ε has been assumed to be discrete and frequency is continuous, :math:`\epsilon = hf`, where h is some constant (now known as Planck's Constant).
 
 Following this line of logic you can then determine the proper relation for the black body energy distribution.
