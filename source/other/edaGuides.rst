@@ -17,3 +17,14 @@ To install succesfully:
     sudo dnf install ncurses-compat-libs
 
 3. Install the standard Vivado version
+
+4. Once vivado is installed succesfully, you must install the cable drivers
+
+.. code-block:: bash
+
+    sudo ./tools/Xilinx/Vivado/2024.2/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
+
+Pynq-Z2
+-------
+
+
