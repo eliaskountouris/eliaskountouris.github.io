@@ -102,7 +102,19 @@ sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> <
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Install the standard Vivado version</p></li>
+<li><p>Once vivado is installed succesfully, you must install the cable drivers</p></li>
 </ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>./tools/Xilinx/Vivado/2024.2/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
+</pre></div>
+</div>
+</section>
+<section id="x11-wayland-gui-scaling">
+<h2>X11-Wayland GUI Scaling<a class="headerlink" href="#x11-wayland-gui-scaling" title="Link to this heading"></a></h2>
+<p>To scale X11 forwared applications when using wayland locally, set the following variables on the remote:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">QT_AUTO_SCREEN_SCALE_FACTOR</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">QT_SCALE_FACTOR</span><span class="o">=</span><span class="m">2</span>
+</pre></div>
+</div>
 </section>
 </section>
 
