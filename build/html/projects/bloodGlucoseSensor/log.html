@@ -137,6 +137,125 @@
 </li>
 </ul>
 </section>
+<section id="july-23rd-2025">
+<h2>July 23rd 2025<a class="headerlink" href="#july-23rd-2025" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>All components able to be communicated with except for USB PD</p></li>
+<li><p>NFC does respond over I2C but we can’t read off NFC antenna</p></li>
+</ul>
+</section>
+<section id="july-24th-2025">
+<h2>July 24th 2025<a class="headerlink" href="#july-24th-2025" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Realized USB PD has I2C pins swapped</dt><dd><ul>
+<li><p>Cut traces on one board to try to physically swapped the connections</p></li>
+<li><p>Realized that this could be patched in SW by using a software defined I2C connection for the USB PD, and then swapping to I2C peripheral for the other components</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Isues soldering balun</dt><dd><ul>
+<li><dl class="simple">
+<dt>Pads are way to small to do by hand</dt><dd><ul>
+<li><p>Future revision pads should be made much wider to support handsoldering</p></li>
+<li><p>Going to attempt to try solder paste</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Measured resonator response on VNA</dt><dd><ul>
+<li><p>Used plastic bag filled with water and glucose to test different blood sugar levels</p></li>
+<li><p>Measurable change in center frequency</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Couldn’t get PLL to output</dt><dd><ul>
+<li><p>PLL says it is locking and outputing wave</p></li>
+<li><p>Unclear if it is actually outputting, can’t be detected</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="july-25th-2025">
+<h2>July 25th 2025<a class="headerlink" href="#july-25th-2025" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Checked PLL out with AC multimeter</dt><dd><ul>
+<li><p>Reading only 0.15Vrms (-3.5dBm) output</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Connected PLL to oscillisciope to measure 40Mhz output, nothing read</dt><dd><ul>
+<li><p>Issues with FW writing to PLL registers</p></li>
+<li><p>Looked at SW defined SPI interface</p></li>
+<li><p>Was able to interact with it and load registers</p></li>
+<li><p>600mVpp, 100kHz wave generate, PLL wasn’t locking</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Attempted to use solder paste + heat gun to attach balun, succesful</dt><dd><ul>
+<li><p>Went back and redid other boards baluns</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Was able to repair other board with the torn adjust resistor pad</dt><dd><ul>
+<li><p>Directly bridge resistor from +5V pad to pin</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="july-27th-2025">
+<h2>July 27th 2025<a class="headerlink" href="#july-27th-2025" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Was able to drive clean 70MHz sine wave output from PLL</dt><dd><ul>
+<li><p>70MHz is max we could measure on scope</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Issues with NFC, antenna doesn’t seem to be receiving anything</p></li>
+<li><p>Issues with ADC, incorrect values</p></li>
+</ul>
+</section>
+<section id="july-28th-2025">
+<h2>July 28th 2025<a class="headerlink" href="#july-28th-2025" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Confirmed NFC can recieve signals with a peak to peak voltage of over 3V</dt><dd><ul>
+<li><p>Investigating the packet format to see if its a phone issue</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>ADC is having issues reading the proper value</dt><dd><ul>
+<li><p>If it cannot be solved we will just attempt to read the output using a scope</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
 </section>
 
 

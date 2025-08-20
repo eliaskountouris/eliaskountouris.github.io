@@ -28,3 +28,7 @@ Discovered Issues
     * A lower dropout LDO or a high voltage boost will be needed 
 * The PLL pseudo-SPI interface is not connected to the SPI1 peripheral correctly
     * In the future a MCU GPIO connection doc should be created ASAP
+* The balun pads are big enough to be pick and placed but way too small to do by hand
+    * Was able to use solder paste + heatgun to attach
+* The USB PD controller has its SDA and SCL pins swapped
+    * Was able to bypass in SW
