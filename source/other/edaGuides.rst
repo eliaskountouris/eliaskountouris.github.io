@@ -25,7 +25,7 @@ To install succesfully:
     sudo ./tools/Xilinx/Vivado/2024.2/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
 
 X11-Wayland GUI Scaling
------------
+-----------------------
 To scale X11 forwared applications when using wayland locally, set the following variables on the remote:
 
 .. code-block:: bash

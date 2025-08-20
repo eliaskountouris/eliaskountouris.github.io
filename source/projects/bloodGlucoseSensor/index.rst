@@ -11,7 +11,7 @@ Glucose disolved in water it's charecteristic impedance. RF based sensors can de
 The system will use PLL Frequency Generator and IQ Demodulator to measure the magnitude and phase shift through the resonator. Data will be held on device until it can be transfered to the user's phone via NFC. From there, data will be processed to determine the user's blood glucose levels.
 
 V1 - Measurment Dev Board
-==============
+=========================
 
 Overview
 --------
