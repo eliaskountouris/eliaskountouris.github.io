@@ -17,6 +17,7 @@ This is where I document my projects and keep my notes about things I've read.
    Takeaways Chrome Extension <https://chrome.google.com/webstore/detail/takeaways/ehcmjoghediminbmabjnhogpaacceilm?hl=en>
    Mini Keypad <https://github.com/eliaskountouris/Keypad>
 
+
 .. toctree::
    :maxdepth: 1
    :caption: Paper Reviews:
